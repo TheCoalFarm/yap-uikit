@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/goosedefi/goose-uikit",
+  "repository": "https://github.com/theyapfarm/yap-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
@@ -18,12 +18,6 @@
     "build-storybook": "build-storybook",
     "test": "jest",
     "release": "yarn build && np"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn format",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "jest": {
     "setupFilesAfterEnv": [

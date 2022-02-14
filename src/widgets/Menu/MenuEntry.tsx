@@ -32,7 +32,7 @@ const MenuEntry = styled.div<Props>`
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme }) => theme.colors.textSubtle};
-  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
+  background-color: ${({ isActive, theme }) => (isActive ? `#44465a` : "none")};
 
   a {
     display: flex;
@@ -43,6 +43,10 @@ const MenuEntry = styled.div<Props>`
 
   svg {
     fill: ${({ theme }) => theme.colors.textSubtle};
+  }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.tertiary};
   }
 
   &:hover {
