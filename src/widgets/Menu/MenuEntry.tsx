@@ -28,11 +28,13 @@ const MenuEntry = styled.div<Props>`
   display: flex;
   align-items: center;
   height: ${MENU_ENTRY_HEIGHT}px;
-  padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
+  padding: ${({ secondary }) => (secondary ? "0 32px" : "0 32px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme }) => theme.colors.textSubtle};
-  background-color: ${({ isActive, theme }) => (isActive ? `#44465a` : "none")};
+  background-color: ${({ isActive, theme }) => (isActive ? `#FFFFFF` : "none")};
+  margin: ${({ isActive, theme }) => (isActive ? `16px` : "none")};
+  border-radius: ${({ isActive, theme }) => (isActive ? `120px` : "none")};
 
   a {
     display: flex;
@@ -47,6 +49,8 @@ const MenuEntry = styled.div<Props>`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.tertiary};
+    margin: 16px;
+    border-radius: 120px;
   }
 
   &:hover {
