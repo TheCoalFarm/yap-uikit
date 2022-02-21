@@ -33,7 +33,6 @@ const MenuEntry = styled.div<Props>`
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme }) => theme.colors.textSubtle};
   background-color: ${({ isActive, theme }) => (isActive ? `#FFFFFF` : "none")};
-  border-radius: ${({ isActive, theme }) => (isActive ? `120px` : "none")};
 
   a {
     display: flex;
