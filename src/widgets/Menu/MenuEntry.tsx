@@ -33,7 +33,7 @@ const MenuEntry = styled.div<Props>`
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme }) => theme.colors.textSubtle};
   background-color: ${({ isActive, theme }) => (isActive ? `#FFFFFF` : "none")};
-  margin: ${({ isActive, theme }) => (isActive ? `16px` : "none")};
+  margin: ${({ isActive, theme }) => (isActive ? `0px 16px` : "none")};
   border-radius: ${({ isActive, theme }) => (isActive ? `120px` : "none")};
 
   a {
@@ -49,8 +49,6 @@ const MenuEntry = styled.div<Props>`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.tertiary};
-    margin: 16px;
-    border-radius: 120px;
   }
 
   &:hover {
