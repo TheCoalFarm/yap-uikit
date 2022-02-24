@@ -2215,7 +2215,7 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/thecoalfarm",
+                href: "https://t.me/CoalFarmFTM",
             },
         ],
     },
